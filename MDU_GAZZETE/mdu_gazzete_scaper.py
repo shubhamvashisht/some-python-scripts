@@ -2,7 +2,7 @@ import os
 import re
 
 def search_by_rid(registration_no):
-	resfile = open("GZTBTECH.TXT")
+	resfile = open("MDURESULT2017.txt")
 	for line in resfile:
 		if registration_no in line:
 			stu_name = re.search('\s[a-zA-Z]\w+(?:\s[a-zA-Z]\w+?)?\s(?:[a-zA-Z]\w+?)?[\s\.\,\;\:]',line)
